@@ -10,6 +10,7 @@
 
 int main(void)
 {
+
 	unsigned long int i;
 	unsigned long int bef = 1;
 	unsigned long int aft = 2;
@@ -46,7 +47,6 @@ int main(void)
 	return (0);
 }
 
-
 _putchar.c
 
 #include "main.h"
@@ -62,7 +62,6 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-
 
 main.h
 
