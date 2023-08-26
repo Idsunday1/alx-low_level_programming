@@ -5,7 +5,6 @@
  * @n: integer params
  * Return: 0
  */
-
 void rev_string(char *n)
 {
 
@@ -13,6 +12,7 @@ void rev_string(char *n)
 	int j = 0;
 
 	char temp;
+
 	while (*(n + i) != '\0')
 	{
 		i++;
@@ -75,4 +75,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	*(r + digits) = '\0';
 	rev_string(r);
 	return (r);
+
 }
