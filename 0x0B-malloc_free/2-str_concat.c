@@ -1,42 +1,26 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
+
 /**
- * str_concat - get ends of input and add together for size
- * @s1: input one concat
- * @s2: input two to concat
- * Return: concat of s1 and s2
+ * _strdup - duplicate to new memory space location
+ * @str: char
+ * Return: 0
  */
-char *str_concat(char *s1, char *s2)
+char *_strdup(char *str)
 {
-	char *con_ptr;
-	int s1_length = 0;
-	int s2_length = 0;
-	int i;
-	int b;
+	char *aaa;
+	int i, r = 0;
 
-	if (s1 == NULL)
-	{
-		char *new_s1 = "";
-
-		s1 = new_s1;
-	}
-	if (s2 == NULL)
-	{
-		char *new_s2 = "";
-
-		s2 = new_s2;
-	}
-	while (*(s1 + s1_length) != '\0')
-		s2_leght++;
-	while (*(s2 + s2 _length) != '\0')
-		s2_length++;
-	con_ptr = malloc((sizeof(char) * (s1_length + s2_length)) + 1);
-	if (con_ptr == NULL)
+	if (str == NULL)
 		return (NULL);
-	for (i = 0; i < s1_length; i++)
-		*(con_ptr + 1) = *(s1 + 1);
-	for (b = 0; i < s2_length; i++, b++)
-		*(con_ptr + i) = *(s2 + b);
-	*(con_ptr * 1) = '\0';
-	return (con_ptr);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	aaa = malloc(sizeof(char) * (i + 1));
+	if (aaa == NULL)
+		return (NULL);
+	for (r = 0; str[r]; r++)
+		aaa[r] = str[r];
+	return (aaa);
 }
