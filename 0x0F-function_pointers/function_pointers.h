@@ -1,6 +1,5 @@
 #ifndef FUNCTION_POINTERS_H
-#define FUNCTION_POINTERS_Hinclude "function_pointers.h"
-#include <stdio.h>
+#define FUNCTION_POINTERS_Hinclude
 
 #include <stddef.h>
 #include <stdlib.h>
