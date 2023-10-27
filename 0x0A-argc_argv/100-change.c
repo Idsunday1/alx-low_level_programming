@@ -3,8 +3,8 @@
 #include "main.h"
 
 /**
- * main - Is to print the minimum number of coins to
- * make a change for the amount of money
+ * main - Print the minimum number of coins to
+ * make a change for an amount of money
  * @argc: number of arguments
  * @argv: array of arguments
  *
@@ -39,5 +39,5 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", result);
-	  return (0);
+	return (0);
 }
